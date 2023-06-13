@@ -9,8 +9,7 @@ This project intends to be the one-stop-shop database manager for all prospectiv
 
 ## Database Outline
 
-<ul>
-<li>Farms</li>
+### Farms
 <ul>
 <li>Description: The heart of the action, where the growing of all crops take place, grown and harvested all by Jeremiah... at least on appearance, that is. One farm will exclusively produce one crop, and each farm is maintained by one or many equipment. The database will manage a collection of such farms.</li>
 </ul>
@@ -30,4 +29,20 @@ be sourced from one farm.</li>
 <li>1:M with Equipments. One farm may be maintained by many equipment,
 but one equipment will solely be used by one farm.</li>
 </ul>
+
+### Equipments
+<ul>
+<li>Description: Stores all kinds of equipment ranging from tractors to fertilizers. Any given equipment will only belong to one farm but many equipment may be used to maintain a single farm. Equipment cost and value fields are set to keep track of purchase price and the expected value in the event the equipment is no longer necessary and better off sold. An optional maintenance date field will store the next future date a necessary maintenance should take place.</li>
+<li>Attributes:</li>
+<ul>
+<li>equipment_id, PK, INT, auto_increment, not NULL</li>
+<li>farm_id, FK, INT, not NULL</li>
+<li>purchase_date, DATE, not NULL</li>
+<li>equipment_cost, DECIMAL(10, 2), not NULL</li>
+<li>equipment_value, DECIMAL(10, 2), not NULL</li>
+<li>maintenance_date, DATE</li>
+</ul>
+<li>Relationships:</li>
+<li>M:1 with Farms. Many equipment may be used to maintain one farm, but
+one equipment will only belong to one farm.</li>
 </ul>
