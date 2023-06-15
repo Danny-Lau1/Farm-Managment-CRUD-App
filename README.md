@@ -20,7 +20,6 @@ This project intends to be the one-stop-shop database manager for all prospectiv
         <li>address, VARCHAR(255), not NULL</li>
         <li>description, VARCHAR(255), not NULL</li>
     </ul>
-
     <li>Relationships:</li>
     <ul>
         <li>1:1 with Crops. One farm will only grow one crop, and one crop can only
@@ -146,3 +145,5 @@ This project intends to be the one-stop-shop database manager for all prospectiv
 ## Schema Diagram
 
 ![Schema Diagram](images/schema_screenshot.png)
+
+
