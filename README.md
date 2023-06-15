@@ -147,3 +147,22 @@ This project intends to be the one-stop-shop database manager for all prospectiv
 ![Schema Diagram](images/schema_screenshot.png)
 
 
+## Screenshots and GIFs
+
+### Homepage
+
+![Homepage](images/home_screenshot.png)
+
+### Reading Crop Table
+
+![Reading a crop](images/crops_screenshot.png)
+
+### Creating A Crop
+
+![Creating crop gif](images/create.gif)
+
+### Updating A Crop
+![Updating crop gif](images/update.gif)
+
+### Deleting A Crop
+![Deleting crop gif](images/deleting.gif)
